@@ -49,14 +49,14 @@ public class DoctorTableModel extends DefaultTableModel {
             Doctor doctor = doctorList.get(i);
 
             // Populate each column for a doctor
-            doctorData[i][0] = doctor.getD_id();        // Doctor ID
-            doctorData[i][1] = doctor.getA_id();        // Department ID
-            doctorData[i][2] = doctor.getD_name();      // Doctor Name
-            doctorData[i][3] = doctor.getD_sex();       // Gender
+            doctorData[i][0] = doctor.getD_id();                // Doctor ID
+            doctorData[i][1] = doctor.getA_id();                // Department ID
+            doctorData[i][2] = doctor.getD_name();              // Doctor Name
+            doctorData[i][3] = doctor.getD_sex();               // Gender
             doctorData[i][4] = String.valueOf(doctor.getD_age()); // Age
-            doctorData[i][5] = doctor.getD_type();      // Title
-            doctorData[i][6] = doctor.getD_price();     // Graduation School
-            doctorData[i][7] = doctor.getD_type1();     // Experience (Years)
+            doctorData[i][5] = doctor.getD_type();              // Title
+            doctorData[i][6] = doctor.getGraduationSchool();    // Graduation School
+            doctorData[i][7] = doctor.getExperienceYears();     // Experience (Years)
         }
 
         // Set the data and headers for the table model

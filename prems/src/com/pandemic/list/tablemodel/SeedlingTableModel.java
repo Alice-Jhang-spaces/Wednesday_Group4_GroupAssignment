@@ -12,7 +12,7 @@ import java.util.List;
 public class SeedlingTableModel extends DefaultTableModel {
 
     private final SeedlingDao seedlingDao = new SeedlingDao();
-    private final String[] tableHeaders = {"Vaccine ID", "Name", "Origin", "Production Date", "Description"};
+    private final String[] tableHeaders = {"Vaccine ID", "Name", "Place of Production:", "Manufacturing Date:", "Description"};
     private String[][] seedlingData;
 
     public SeedlingTableModel() throws Exception {

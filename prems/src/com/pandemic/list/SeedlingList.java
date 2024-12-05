@@ -28,10 +28,10 @@ public class SeedlingList extends JFrame {
         scrollPane1 = new JScrollPane();
         table1 = new JTable();
         label1 = new JLabel("Vaccine ID:");
-        label2 = new JLabel("Production Date:");
-        label3 = new JLabel("Description:");
-        label4 = new JLabel("Name:");
-        label5 = new JLabel("Origin:");
+        label2 = new JLabel("Name:");
+        label3 = new JLabel("Place of Production:");
+        label4 = new JLabel("Manufacturing Date:");
+        label5 = new JLabel("Description:");
         textField1 = new JTextField();
         textField2 = new JTextField();
         textField3 = new JTextField();

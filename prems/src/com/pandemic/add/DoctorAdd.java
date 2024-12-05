@@ -110,27 +110,37 @@ public class DoctorAdd extends JFrame {
 
         // Add button action listener
         button1.addActionListener((ActionEvent e) -> {
-            String dd_idTemp = textField1.getText();
-            String a_idTemp = textField2.getText();
-            String dd_nameTemp = textField3.getText();
-            String dd_sexTemp = textField4.getText();
-            int dd_ageTemp;
+            String doctorId = textField1.getText().trim();
+            String departmentId = textField2.getText().trim();
+            String doctorName = textField3.getText().trim();
+            String gender = textField4.getText().trim();
+            int age;
             try {
-                dd_ageTemp = Integer.parseInt(textField5.getText());
+                age = Integer.parseInt(textField5.getText().trim());
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(null, "Please enter a valid age");
                 return;
             }
-            String dd_typeTemp = textField6.getText();
-            String dd_priceTemp = textField7.getText();
-            String dd_type1Temp = textField8.getText();
-
-            if (dd_idTemp.trim().equals("")) {
-                JOptionPane.showMessageDialog(null, "Doctor ID is required");
+            String title = textField6.getText().trim();
+            String graduationSchool = textField7.getText().trim();
+            int yearsOfExperience;
+            try {
+                yearsOfExperience = Integer.parseInt(textField8.getText().trim());
+                if (yearsOfExperience < 0) {
+                    JOptionPane.showMessageDialog(null, "Years of Experience cannot be negative");
+                    return;
+                }
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(null, "Please enter a valid number for Years of Experience");
                 return;
             }
 
-            Doctor doctor = new Doctor(dd_idTemp, a_idTemp, dd_nameTemp, dd_sexTemp, dd_ageTemp, dd_typeTemp, dd_priceTemp, dd_type1Temp);
+            if (doctorId.isEmpty() || departmentId.isEmpty() || doctorName.isEmpty() || gender.isEmpty() || title.isEmpty() || graduationSchool.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "All fields are required");
+                return;
+            }
+
+            Doctor doctor = new Doctor(doctorId, departmentId, doctorName, gender, age, title, graduationSchool, String.valueOf(yearsOfExperience));
             DoctorDao doctorDao = new DoctorDao();
             boolean res;
 
@@ -147,6 +157,7 @@ public class DoctorAdd extends JFrame {
                 JOptionPane.showMessageDialog(null, "Failed to add doctor");
             }
         });
+
 
         // Cancel button action listener
         button2.addActionListener((ActionEvent e) -> {

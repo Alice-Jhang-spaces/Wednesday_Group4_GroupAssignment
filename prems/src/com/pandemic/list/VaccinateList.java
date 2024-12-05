@@ -50,7 +50,7 @@ public class VaccinateList extends JFrame {
         contentPane.setLayout(null);
 
         // Table setup
-        table1.setPreferredSize(new Dimension(555, 400));
+        table1.setPreferredSize(new Dimension(580, 440));
         table1.setModel(new VaccinateTableModel());
         scrollPane1.setViewportView(table1);
         contentPane.add(scrollPane1);
@@ -60,27 +60,27 @@ public class VaccinateList extends JFrame {
         contentPane.add(label1);
         label1.setBounds(50, 155, 150, 25);
         contentPane.add(textField1);
-        textField1.setBounds(200, 155, 150, 25);
+        textField1.setBounds(150, 155, 150, 25);
 
         contentPane.add(label2);
         label2.setBounds(50, 195, 150, 25);
         contentPane.add(textField4);
-        textField4.setBounds(200, 195, 150, 25);
+        textField4.setBounds(150, 195, 150, 25);
 
         contentPane.add(label3);
         label3.setBounds(50, 235, 150, 25);
         contentPane.add(textField5);
-        textField5.setBounds(200, 235, 150, 25);
+        textField5.setBounds(150, 235, 150, 25);
 
         contentPane.add(label4);
         label4.setBounds(360, 155, 150, 25);
         contentPane.add(textField2);
-        textField2.setBounds(480, 155, 150, 25);
+        textField2.setBounds(360, 155, 200, 25);
 
         contentPane.add(label5);
         label5.setBounds(360, 195, 150, 25);
         contentPane.add(textField3);
-        textField3.setBounds(480, 195, 150, 25);
+        textField3.setBounds(360, 195, 200, 25);
 
         // Button placements
         button1.setBounds(50, 280, 100, 30);

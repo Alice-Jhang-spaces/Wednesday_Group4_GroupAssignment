@@ -106,4 +106,12 @@ public class Doctor {
     public void setD_type1(String d_type1) {
         this.d_type1 = d_type1;
     }
+
+    public String getGraduationSchool() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public String getExperienceYears() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

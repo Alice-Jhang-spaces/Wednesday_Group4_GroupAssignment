@@ -4,6 +4,7 @@ import com.pandemic.add.*;
 import com.pandemic.b.User;
 import com.pandemic.list.*;
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -188,6 +189,12 @@ public class MainFram extends JFrame {
                         break;
                 }
                 break;
+            case "Auditor":
+                // Auditor
+                if ("Compliance".equals(organization)) {
+                roleBasedMenus.add(fullMenuStructure[8]); // Work Requests
+                }
+                break;
 
             default:
                 roleBasedMenus.add(new String[]{"No Access", "Contact Admin"});
@@ -196,109 +203,7 @@ public class MainFram extends JFrame {
         return roleBasedMenus.isEmpty() ? new String[][]{{"No Access", "Contact Admin"}} : roleBasedMenus.toArray(new String[0][]);
     }
 
-    /**
-     * Performs the action corresponding to the selected submenu.
-     *
-     * @param menuIndex    Index of the main menu
-     * @param submenuIndex Index of the submenu
-     */
-//    private void performAction(int menuIndex, int submenuIndex) {
-//        String mainMenu = filteredMenuStructure[menuIndex][0];
-//        String submenu = filteredMenuStructure[menuIndex][submenuIndex + 1];
-//
-//        try {
-//            switch (mainMenu) {
-//                case "Patient Management":
-//                    if (submenu.equals("Add Patient")) {
-//                        new PatientAdd();
-//                    } else if (submenu.equals("Manage Patients")) {
-//                        new PatientList();
-//                    }
-//                    break;
-//
-//                case "Doctor Management":
-//                    if (submenu.equals("Add Doctor")) {
-//                        new DoctorAdd();
-//                    } else if (submenu.equals("Manage Doctors")) {
-//                        new DoctorList();
-//                    }
-//                    break;
-//
-//                case "Department Management":
-//                    if (submenu.equals("Add Department")) {
-//                        new AdminAdd();
-//                    } else if (submenu.equals("Manage Departments")) {
-//                        new AdminList();
-//                    }
-//                    break;
-//
-//                case "Medicine Management":
-//                    if (submenu.equals("Add Medicine")) {
-//                        new DssAdd();
-//                    } else if (submenu.equals("Manage Medicines")) {
-//                        new DssList();
-//                    }
-//                    break;
-//
-//                case "Hospital Management":
-//                    if (submenu.equals("Add Hospital")) {
-//                        new MrescriptionAdd();
-//                    } else if (submenu.equals("Manage Hospitals")) {
-//                        new MrescriptionList();
-//                    }
-//                    break;
-//
-//                case "Pandemic Management":
-//                    if (submenu.equals("Add Pandemic")) {
-//                        new PreventionAdd();
-//                    } else if (submenu.equals("Manage Pandemics")) {
-//                        new PreventionList();
-//                    } else if (submenu.equals("Pandemic Report")) {
-//                        SwingUtilities.invokeLater(() -> {
-//                            try {
-//                                PreventionPieChart chartExample = new PreventionPieChart();
-//                                chartExample.setSize(500, 400);
-//                                chartExample.setLocationRelativeTo(null);
-//                                chartExample.setVisible(true);
-//                            } catch (Exception ex) {
-//                                JOptionPane.showMessageDialog(null, "Error opening Pandemic Report: " + ex.getMessage(),
-//                                        "Error", JOptionPane.ERROR_MESSAGE);
-//                            }
-//                        });
-//                    }
-//                    break;
-//
-//                case "Vaccine Management":
-//                    if (submenu.equals("Add Vaccine")) {
-//                        new SeedlingAdd();
-//                    } else if (submenu.equals("Manage Vaccines")) {
-//                        new SeedlingList();
-//                    }
-//                    break;
-//
-//                case "Vaccine Order Management":
-//                    if (submenu.equals("Add Vaccine order")) {
-//                        new UserorderAdd();
-//                    } else if (submenu.equals("Manage Vaccine orders")) {
-//                        new UserorderList();
-//                    }
-//                    break;
-//
-//                case "Transport Management":
-//                    if (submenu.equals("Add Transport")) {
-//                        new TransportAdd();
-//                    } else if (submenu.equals("Manage Transports")) {
-//                        new TransportList();
-//                    }
-//                    break;
-//
-//                default:
-//                    JOptionPane.showMessageDialog(this, "Unknown menu action!", "Error", JOptionPane.ERROR_MESSAGE);
-//            }
-//        } catch (Exception ex) {
-//            JOptionPane.showMessageDialog(this, "Error: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-//        }
-//    }
+    
     private void performAction(int menuIndex, int submenuIndex) {
         String mainMenu = filteredMenuStructure[menuIndex][0];
         String submenu = filteredMenuStructure[menuIndex][submenuIndex + 1];
@@ -396,6 +301,14 @@ public class MainFram extends JFrame {
                         new WorkRequestList();
                     }
                     break;
+                
+                case "Patient Information":
+                    if (submenu.equals("Type information")) {
+                        new PatientDetails().setVisible(true);
+                    }
+                    break;
+
+
 
                 default:
                     JOptionPane.showMessageDialog(this, "Unknown menu action!", "Error", JOptionPane.ERROR_MESSAGE);
