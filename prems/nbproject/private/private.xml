@@ -3,11 +3,26 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/Users/alice/Downloads/Wednesday_Group4_GroupAssignment-Haodong-Yun/prems1/src/com/pandemic/a/BaseDao.java</file>
             <file>file:/Users/alice/Downloads/Wednesday_Group4_GroupAssignment-Haodong-Yun/prems1/src/com/pandemic/a/SeedlingDao.java</file>
             <file>file:/Users/alice/Downloads/Wednesday_Group4_GroupAssignment-Haodong-Yun/prems1/src/com/pandemic/add/SeedlingAdd.java</file>
             <file>file:/Users/alice/Downloads/Wednesday_Group4_GroupAssignment-Haodong-Yun/prems1/src/com/pandemic/list/tablemodel/SeedlingTableModel.java</file>
             <file>file:/Users/alice/Downloads/Wednesday_Group4_GroupAssignment-Haodong-Yun/prems1/src/com/pandemic/list/SeedlingList.java</file>
+=======
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/c/MainFram.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/add/DoctorAdd.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/list/PreventionPieChart.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/a/BaseDao.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/add/SeedlingAdd.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/add/AdminAdd.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/a/AdminDao.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/b/Admin.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/c/PatientDetails.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/c/WorkRequest.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/b/Doctor.java</file>
+            <file>file:/Users/alice/Desktop/5100/prems/src/com/pandemic/c/Login.java</file>
+>>>>>>> c5ff5cb2b8f6e43d690bbe43b4cad48f7889cae4
         </group>
     </open-files>
 </project-private>
