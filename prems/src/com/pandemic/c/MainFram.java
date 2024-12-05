@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package com.pandemic.c;
 
 import com.pandemic.add.*;
