@@ -3,12 +3,14 @@
 package com.pandemic.a;
 import com.pandemic.b.Mrescription;
 import com.pandemic.b.Registration;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 public class RegistrationDao extends BaseDao{
     public List getAllRegistration() throws Exception{
         List registrationList = new ArrayList();
