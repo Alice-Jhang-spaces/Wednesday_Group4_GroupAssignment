@@ -1,9 +1,10 @@
 package com.pandemic.list;
 
+
+
 import com.pandemic.a.PatientDao;
 import com.pandemic.b.Patient;
 import com.pandemic.list.tablemodel.PatientTableModel;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
