@@ -1,6 +1,8 @@
 
 
 package com.pandemic.b;
+
+
 public class Vaccinate {
     String m_id;
     String r_id;
